@@ -172,6 +172,14 @@ footer {
     color: #32B1E4;
 }
 
+button:focus {
+    outline: none;
+}
+
+.navbar-toggler{
+    border: none;
+}
+
 .navbar-toggler-icon {
     color: #FF8000;
 }
