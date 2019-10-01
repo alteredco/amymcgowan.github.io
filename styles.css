@@ -154,3 +154,24 @@ hr {
 footer {
     background-image: linear-gradient(var(--primary), #156c9f);
 }
+
+/* suggested style changes */
+.fa-linkedin:hover{
+    color: #32B1E4;
+}
+
+.fa-github:hover{
+    color: #32B1E4;
+}
+
+.fa-twitter:hover{
+    color: #32B1E4;
+}
+
+.fa-envelope:hover{
+    color: #32B1E4;
+}
+
+.navbar-toggler-icon {
+    color: #FF8000;
+}

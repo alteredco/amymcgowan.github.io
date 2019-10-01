@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
@@ -12,6 +13,7 @@
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body data-spy="scroll" data-target=".navbar" data-offset="50">
     <!-- Header Banner  -->
     <div class="jumbotron jumbotron-fluid">
@@ -36,14 +38,14 @@
         </div>
     </div>
 
-
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-md sticky-top bg-primary text-uppercase" id="navbarNav">
+    <!-- removed id="navbarNav" from the navbar as this is the target id for the collapse and should be after the navbar brand and menu toggle button-->
+    <nav class="navbar navbar-expand-md sticky-top bg-primary text-uppercase">
         <div class="container">
             <a class="navbar-brand" href="#">Amy McGowan</a>
-            <button class="navbar-toggler navbar-toggler-right bg-primary text-white" type="button" data-toggle="collapse"
-                data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">Menu 
-                <span class="navbar-toggler-icon text-white"><i class=”fas fa-bars text-white”></i></span>
+            <button class="navbar-toggler navbar-toggler-right  text-white" type="button" data-toggle="collapse"
+                data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ml-auto">
@@ -63,7 +65,7 @@
             </div>
         </div>
     </nav>
-    
+
     <!-- About -->
     <section class="section" id="about">
         <div class="container text-dark mb-5">
@@ -71,12 +73,16 @@
             <div class="row">
                 <div class="col-md-5 ml-auto my-auto">
                     <p>You had me at "Hello World!"</br></br>
-                    From the moment I got my first real taste of the creativity, satisfaction, and
-                    problem solving of coding, I knew I wanted to figure out how to make a career out of it.<br/><br/>  
-                    
-                    I'm a dedicated wife and mama, and I am learning more every day in order to pave the way to be able 
-                    to raise my goofy son while also engaging in a career I really enjoy.  I love to create things that 
-                    are beautiful and useful and want to use code to make a positive and lasting impact in this world.</p>
+                        From the moment I got my first real taste of the creativity, satisfaction, and
+                        problem solving of coding, I knew I wanted to figure out how to make a career out of
+                        it.<br /><br />
+
+                        I'm a dedicated wife and mama, and I am learning more every day in order to pave the way to be
+                        able
+                        to raise my goofy son while also engaging in a career I really enjoy. I love to create things
+                        that
+                        are beautiful and useful and want to use code to make a positive and lasting impact in this
+                        world.</p>
                 </div>
                 <!-- Two different size images; longer one appears only at md breakpoint -->
                 <div class="col-md-4 mr-auto d-md-none d-lg-block">
@@ -92,34 +98,34 @@
     <!-- Skills -->
     <section>
         <div class="container-fluid text-center text-white bg-primary">
-        <div class="row">
-            <div class="col-sm-12 col-md-6 text-md-right px-0">
-                <div class="container px-0">
-                    <i class="skill-icon fab fa-git-alt"></i>
-                    <!-- <i class="skill-icon icon-git"></i> -->
-                    <i class="skill-icon fab fa-github"></i>
-                    <i class="skill-icon fab fa-html5"></i>
-                    <!-- <i class="skill-icon icon-html5-alt"></i> -->
-                    <i class="skill-icon fab fa-css3-alt"></i>
-                    <!-- <i class="skill-icon icon-css3-alt"></i> -->
+            <div class="row">
+                <div class="col-sm-12 col-md-6 text-md-right px-0">
+                    <div class="container px-0">
+                        <i class="skill-icon fab fa-git-alt"></i>
+                        <!-- <i class="skill-icon icon-git"></i> -->
+                        <i class="skill-icon fab fa-github"></i>
+                        <i class="skill-icon fab fa-html5"></i>
+                        <!-- <i class="skill-icon icon-html5-alt"></i> -->
+                        <i class="skill-icon fab fa-css3-alt"></i>
+                        <!-- <i class="skill-icon icon-css3-alt"></i> -->
+                    </div>
                 </div>
-            </div>
-            <div class="col-sm-12 col-md-6 text-md-left px-0">
-                <div class="container px-0">
-                    <i class="skill-icon fab fa-js"></i>
-                    <!-- <i class="skill-icon icon-javascript-alt"></i> -->
-                    <i class="skill-icon icon-ruby"></i>
-                    <i class="skill-icon icon-ruby-on-rails"></i>
-                    <!-- <i class="skill-icon icon-python"></i> -->
-                    <i class="skill-icon fab fa-python"></i>
+                <div class="col-sm-12 col-md-6 text-md-left px-0">
+                    <div class="container px-0">
+                        <i class="skill-icon fab fa-js"></i>
+                        <!-- <i class="skill-icon icon-javascript-alt"></i> -->
+                        <i class="skill-icon icon-ruby"></i>
+                        <i class="skill-icon icon-ruby-on-rails"></i>
+                        <!-- <i class="skill-icon icon-python"></i> -->
+                        <i class="skill-icon fab fa-python"></i>
+                    </div>
                 </div>
             </div>
         </div>
-        </div>
-            
-        
+
+
     </section>
-    
+
     <!-- Portfolio -->
     <section class="section" id="portfolio">
         <div class="container text-dark mb-5">
@@ -132,9 +138,11 @@
                         <img class="shadow card-img-top" src="/assets/mcgowan-newsletter-img.png" width="100%">
                         <div class="card-body">
                             <div class="d-flex justify-content-around">
-                                <a href="https://github.com/andreamartz/Email-Newsletter" class="btn btn-style text-dark bg-white text-uppercase"><span><i
+                                <a href="https://github.com/andreamartz/Email-Newsletter"
+                                    class="btn btn-style text-dark bg-white text-uppercase"><span><i
                                             class="fab fa-github text-accent mr-1"></i></span>Github</a>
-                                <a href="https://andreamartz.github.io/Email-Newsletter/" class="btn btn-style text-dark bg-white text-uppercase"><span><i
+                                <a href="https://andreamartz.github.io/Email-Newsletter/"
+                                    class="btn btn-style text-dark bg-white text-uppercase"><span><i
                                             class="fas fa-globe text-accent mr-1"></i></span>Website</a>
                             </div>
                         </div>
@@ -144,13 +152,17 @@
                     <div class="card border-0">
                         <div class="card-body pt-0">
                             <h3 class="card-title">HTML Newsletter</h3>
-                            <p class="card-text">This newsletter is the result of a pair programming project to build an 
-                                html email from a fictional company, in this case, a community food bank trying to 
-                                recruit volunteers.  My teammate and I used Trello to organize our ideas and tasks, and we communicated
-                                via Slack and video conferencing.  We pair programmed through VS Code Live Share and collaborated 
-                                on Github.  I did the primary design work and layout in Figma.<br/><br/>
-                                The newsletter project provided me my first experience in working remotely on a team.  I learned
-                                ways to improve upon my communcation skills, as well as how to engage in a collaborate work flow.
+                            <p class="card-text">This newsletter is the result of a pair programming project to build an
+                                html email from a fictional company, in this case, a community food bank trying to
+                                recruit volunteers. My teammate and I used Trello to organize our ideas and tasks, and
+                                we communicated
+                                via Slack and video conferencing. We pair programmed through VS Code Live Share and
+                                collaborated
+                                on Github. I did the primary design work and layout in Figma.<br /><br />
+                                The newsletter project provided me my first experience in working remotely on a team. I
+                                learned
+                                ways to improve upon my communcation skills, as well as how to engage in a collaborate
+                                work flow.
                             </p>
                             <p class="card-text text-muted">Technologies used: HTML, CSS, Figma, Git, Github</p>
                         </div>
@@ -170,8 +182,7 @@
                                 <a href="https://github.com/amymcgowan/amymcgowan.github.io"
                                     class="btn btn-style text-dark bg-white text-uppercase"><span><i
                                             class="fab fa-github text-accent mr-1"></i></span>Github</a>
-                                <a href="#"
-                                    class="btn btn-style text-dark bg-white text-uppercase"><span><i
+                                <a href="#" class="btn btn-style text-dark bg-white text-uppercase"><span><i
                                             class="fas fa-globe text-accent mr-1"></i></span>Website</a>
                             </div>
                         </div>
@@ -181,15 +192,17 @@
                     <div class="card border-0">
                         <div class="card-body pt-0">
                             <h3 class="card-title">Portfolio Website</h3>
-                            <p class="card-text">After reviewing and trying countless templates, 
+                            <p class="card-text">After reviewing and trying countless templates,
                                 I decided it was time to just start from scratch to make my own portfolio
-                                website - and I was up for the challenge!  I first drew my ideas on paper and then 
-                                created a wireframe in Figma.  After some feedback, I started coding this site with 
-                                HTML, CSS, and Bootstrap.  I learned a great deal along the way, some of which I kept track 
-                                of within the README in my Github repository.  My site may be simple, but it's clean, 
+                                website - and I was up for the challenge! I first drew my ideas on paper and then
+                                created a wireframe in Figma. After some feedback, I started coding this site with
+                                HTML, CSS, and Bootstrap. I learned a great deal along the way, some of which I kept
+                                track
+                                of within the README in my Github repository. My site may be simple, but it's clean,
                                 it's happy, and it's made by me!
                             </p>
-                            <p class="card-text text-muted">Technologies used: HTML, CSS, Figma, Bootstrap, Git, Github</p>
+                            <p class="card-text text-muted">Technologies used: HTML, CSS, Figma, Bootstrap, Git, Github
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -243,7 +256,8 @@
             <div class="row d-flex justify-content-around">
                 <div class="col-xs-12">
                     <div class="container pub-card shadow m-2 mx-auto">
-                        <img class="shadow mt-3 img-fluid" src="/assets/pub-place-holder.png" style="width: 100%; height: auto">
+                        <img class="shadow mt-3 img-fluid" src="/assets/pub-place-holder.png"
+                            style="width: 100%; height: auto">
                         <div class="pub-text">
                             <h5 class="pub-title my-3">Blog title bloopity blah</h5>
                             <p class="text-muted "><i class="fas fa-globe text-accent mr-1"></i> Moms Can & Co Blog</p>
@@ -255,7 +269,8 @@
                 </div>
                 <div class="col-xs-12">
                     <div class="container pub-card shadow m-2 mx-auto">
-                        <img class="shadow mt-3 img-fluid" src="/assets/pub-place-holder.png" style="width: 100%; height: auto">
+                        <img class="shadow mt-3 img-fluid" src="/assets/pub-place-holder.png"
+                            style="width: 100%; height: auto">
                         <div class="pub-text">
                             <h5 class="pub-title my-3">Blog title bloopity blah</h5>
                             <p class="text-muted "><i class="fas fa-globe text-accent mr-1"></i> Moms Can & Co Blog</p>
@@ -267,7 +282,8 @@
                 </div>
                 <div class="col-xs-12">
                     <div class="container pub-card shadow m-2 mx-auto">
-                        <img class="shadow mt-3 img-fluid" src="/assets/pub-place-holder.png" style="width: 100%; height: auto">
+                        <img class="shadow mt-3 img-fluid" src="/assets/pub-place-holder.png"
+                            style="width: 100%; height: auto">
                         <div class="pub-text">
                             <h5 class="pub-title my-3">Blog title bloopity blah</h5>
                             <p class="text-muted "><i class="fas fa-globe text-accent mr-1"></i> Moms Can & Co Blog</p>
@@ -287,7 +303,7 @@
             <h2 class="text-center my-5 text-uppercase">Contact</h2>
             <div class="row">
                 <div class="col-lg-4 ml-auto my-auto">
-                    <p>I'd love to hear from you!<br/><br/>Whether just to say hi, to tell me a dad joke, 
+                    <p>I'd love to hear from you!<br /><br />Whether just to say hi, to tell me a dad joke,
                         or to inquire about working together, send me a message here or check out my social media.
                     </p>
                     <p><i class="fas fa-map-marker-alt text-accent mr-1"></i>
@@ -299,20 +315,22 @@
                 </div>
                 <div class="col-lg-7 mr-auto">
                     <form action="https://formspree.io/amymcgowan.dev@gmail.com" method="POST" />
-                        <div class="form-row mb-2">
-                            <div class="col">
-                                <input type="text" class="form-control" name="name" placeholder="Name" required>
-                            </div>
-                            <div class="col">
-                                <input type="email" class="form-control" name="email"placeholder="Email address" required>
-                            </div>
+                    <div class="form-row mb-2">
+                        <div class="col">
+                            <input type="text" class="form-control" name="name" placeholder="Name" required>
                         </div>
-                        <div class="form-row mb-2">
-                            <div class="col">
-                                <textarea type="text" class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
-                            </div>
+                        <div class="col">
+                            <input type="email" class="form-control" name="email" placeholder="Email address" required>
                         </div>
-                        <button type="submit" class="btn btn-style bg-white text-dark text-uppercase">Send<i class="fas fa-paper-plane text-accent ml-1"></i></button>
+                    </div>
+                    <div class="form-row mb-2">
+                        <div class="col">
+                            <textarea type="text" class="form-control" name="message" rows="5" placeholder="Message"
+                                required></textarea>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-style bg-white text-dark text-uppercase">Send<i
+                            class="fas fa-paper-plane text-accent ml-1"></i></button>
                     </form>
                 </div>
             </div>
@@ -352,4 +370,5 @@
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
 </body>
+
 </html>
